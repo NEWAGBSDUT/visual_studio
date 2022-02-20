@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_VIDEO_AREA          BITMAP                  "paper2.bmp"
+
+IDB_NEXT                BITMAP                  "source\\next.bmp"
+
+IDB_NEXT_HOVER          BITMAP                  "source\\next_hover.bmp"
+
+IDB_PREVIOUS            BITMAP                  "source\\previous.bmp"
+
+IDB_PREVIOUS_HOVER      BITMAP                  "source\\previous_hover.bmp"
+
+IDB_PLAY                BITMAP                  "source\\play.bmp"
+
+IDB_PLAY_HOVER          BITMAP                  "source\\play_hover.bmp"
+
+IDB_PAUSE               BITMAP                  "source\\pause.bmp"
+
+IDB_PAUSE_HOVER         BITMAP                  "source\\pause_hover.bmp"
+
+IDB_BITMAP_IMAGEPORTAL1 BITMAP                  "source\\IMG\\2D\\imageportal_bg.bmp"
+
+IDB_BITMAP_IMAGEPORTAL2 BITMAP                  "source\\IMG\\2D\\imageportal_paper1.bmp"
+
+IDB_BITMAP_IMAGEPORTAL3 BITMAP                  "source\\IMG\\2D\\imageportal_paper2.bmp"
+
+IDB_BITMAP_IMAGEPORTAL4 BITMAP                  "source\\IMG\\2D\\imageportal_paper3.bmp"
+
+IDB_BITMAP_IMAGEPORTAL5 BITMAP                  "source\\IMG\\2D\\imageportal_paper4.bmp"
+
+IDB_BITMAP_STARFLASH6   BITMAP                  "source\\IMG\\2D\\star1.bmp"
+
+IDB_BITMAP_STARFLASH7   BITMAP                  "source\\IMG\\2D\\star2.bmp"
+
+IDB_BITMAP_STARFLASH8   BITMAP                  "source\\IMG\\2D\\star3.bmp"
+
+IDB_BITMAP_STARFLASH9   BITMAP                  "source\\IMG\\2D\\star4.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HT           CURSOR                  "Cursor.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MY                  ICON                    "MusicVideoPlayer.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MY MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)",                      IDM_OPEN
+        MENUITEM "退出(&X)",                      IDM_EXIT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A) ...",                  IDM_ABOUT
+    END
+    MENUITEM "选择多个文件",                      IDM_CREATE_PLAY_LIST
+    MENUITEM "选择播放路径",                      IDM_CHOICE_PLAY_LIST
+
+	POPUP "播放模式"
+	BEGIN
+	MENUITEM "单曲循环", IDM_CYCLE_SIGNAL
+	MENUITEM "列表循环", IDM_CYCLE_LIST
+	MENUITEM "随机播放", IDM_CYCLE_RANDOM
+	MENUITEM "顺序播放", IDM_CYCLE_CLOSED
+	END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_MY ACCELERATORS
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "o",            IDM_OPEN,               ASCII,  ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 180, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 音乐视频播放器"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "音乐视频播放器, 版本 1.0",IDC_STATIC,24,14,114,8,SS_NOPREFIX
+    LTEXT           "版权所有(c) 2021",IDC_STATIC,24,26,114,8
+    LTEXT           "注意：该播放器内容无法被捕获，若要截图",IDC_STATIC,24,38,130,8
+    LTEXT           "请使用手机拍摄",IDC_STATIC,24,50,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,50,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "音乐视频播放器"
+    IDC_MY                  "MY"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
